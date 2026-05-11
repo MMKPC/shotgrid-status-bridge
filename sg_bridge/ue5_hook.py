@@ -6,7 +6,6 @@ Run inside UE5 Python environment.
 
 from __future__ import annotations
 import os
-from typing import Any
 
 try:
     import unreal
@@ -50,5 +49,5 @@ def on_asset_saved(project_id: int, asset_name: str, asset_path: str,
 
     version_name = f"{asset_name}_v{unreal.SystemLibrary.get_engine_version()[:4]}"
     sg.create_version(project_id, asset["id"], version_name,
-                      description=description or f"Auto-version from UE5 save")
+                      description=description or "Auto-version from UE5 save")
     unreal.log(f"ShotGrid: version '{version_name}' created for '{asset_name}'")
