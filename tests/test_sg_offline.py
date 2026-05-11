@@ -7,7 +7,6 @@ Run with: pytest tests/
 import sys
 import types
 import unittest
-from unittest.mock import MagicMock
 
 
 # ── shotgun_api3 mock ─────────────────────────────────────────────────────────
