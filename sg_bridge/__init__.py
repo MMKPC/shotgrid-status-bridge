@@ -1,0 +1,1 @@
+"""ShotGrid bridge package init."""
